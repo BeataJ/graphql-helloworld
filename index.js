@@ -2,12 +2,12 @@ const { makeExecutableSchema } = require('graphql-tools');
 const { graphql } = require('graphql');
 
 const typeDefs = `
-  schema {
-    query: Query
-  }
-  type: Query {
-    hello: String
-  }
+schema {
+  query: Query
+}
+type Query {
+  hello: String
+}
 `;
 
 const resolvers = {
