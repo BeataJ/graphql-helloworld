@@ -6,13 +6,15 @@ schema {
   query: Query
 }
 type Query {
-  hello: String
+  hello: String,
+  name: String
 }
 `;
 
 const resolvers = {
   Query: {
     hello: () => 'World',
+    name: () => 'James',
   },
 };
 
